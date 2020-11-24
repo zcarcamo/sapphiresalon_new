@@ -31,21 +31,18 @@
 
 --------------------------------------------------------------*/
 
-
-
-
 /*--------------------------------------------------------------
 3.0 - GENERIC
 -------------------------------------------------------------- */
 
-* {
-	font-family: 'Athiti', sans-serif;
-    font-weight: 500;
-}
-
-html {   
+html {
 	font-size: .9rem;
     line-height: 2.25em;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    color: #363636;
 }
 
 @media only screen and (min-width: 768px) {
@@ -70,8 +67,16 @@ address {
 }
 
 footer {
-    background-color: #09369b;
+    background-color: #007AB0;
     padding: 0.5rem 2rem;
+}
+
+footer nav a {
+    color: #FFF;
+}
+
+p {
+    font-family: 'Baskerville', serif;
 }
 
 /*--------------------------------------------------------------
@@ -90,15 +95,34 @@ footer {
 
 /* -- Header -- */
 
-.top-bar, .title-bar {
-    background-color: #09369b;
+nav a {
+    color: #363636;
+    font-weight: 900;
+}
+
+nav a:hover {
+    color: #CBA91D;
+}
+
+/* .title-bar {
+    background: url(../img/BackgroundImage.jpg) no-repeat center/cover;
+  } */
+
+.top-bar {
+    background-color: #007AB0;
 }
 
 .top-bar ul, .drilldown a  {
     background-color: transparent;
 }
 
-/* -- Buttons - */
+footer .fab {
+    color: #FFF;
+}
+
+.orbit-container {
+    margin: 1rem;
+}
 
 #hero .cell {
     background-color: green;
@@ -112,6 +136,43 @@ footer {
     background-repeat: no-repeat;
     height: 240px;
 }
+
+/* -- Buttons - */
+
+.button {
+    padding: 1rem 3rem;
+    position: relative;
+    bottom: 100px;
+    left: 0;
+    border-radius: 10px;
+    background-color: #FFF;
+    color: #363636;
+}
+
+.button:hover {
+    background-color: #CBA91D;
+    color: #FFF;
+}
+
+.button, h1, h2, nav {
+    text-transform: lowercase;
+}
+
+/* @media only screen and (min-width: 40em) {
+    .top-bar {
+        background: url(../img/BackgroundImage.jpg) no-repeat center/cover;
+    }
+} */
+
+.orbit {
+    margin-top: -25px;
+}
+
+.crt-widget.crt-widget-branded {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
 /*--------------------------------------------------------------
 7.0 - UTILITIES
 -------------------------------------------------------------- */
