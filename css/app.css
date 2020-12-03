@@ -62,6 +62,10 @@ body {
 4.0 - ELEMENTS
 -------------------------------------------------------------- */
 
+h2{
+    font-family: 'Fira Sans', sans-serif;
+}
+
 address {
     margin-left: auto;
 }
@@ -73,10 +77,6 @@ footer {
 
 footer nav a {
     color: #FFF;
-}
-
-p {
-    font-family: 'Baskerville', serif;
 }
 
 /*--------------------------------------------------------------
@@ -96,7 +96,7 @@ p {
 /* -- Header -- */
 
 nav a {
-    color: #363636;
+    color: #FFF;
     font-weight: 900;
 }
 
@@ -104,9 +104,13 @@ nav a:hover {
     color: #CBA91D;
 }
 
-/* .title-bar {
-    background: url(../img/BackgroundImage.jpg) no-repeat center/cover;
-  } */
+#bg-topnav-az {
+    background: url(../img/bg-geode-topnav.jpg) no-repeat center/cover;
+}
+
+.title-bar {
+    background: url(../img/bg-geode-topnav.jpg) no-repeat center/cover;
+  }
 
 .top-bar {
     background-color: #007AB0;
@@ -116,12 +120,32 @@ nav a:hover {
     background-color: transparent;
 }
 
+.menu-icon::after {
+    background: #363636;
+    -webkit-box-shadow: 0 7px 0 #363636, 0 14px 0 #363636;
+    box-shadow: 0 7px 0 #363636, 0 14px 0 #363636;
+}
+
+.menu-icon:hover::after {
+    background: #CBA91D;
+    -webkit-box-shadow: 0 7px 0 #CBA91D, 0 14px 0 #CBA91D;
+    box-shadow: 0 7px 0 #CBA91D, 0 14px 0 #363636;
+}
+
 footer .fab {
     color: #FFF;
 }
 
+footer .fab:hover {
+    color: #CBA91D;
+}
+
 .orbit-container {
     margin: 1rem;
+}
+
+img.logo {
+    max-width: 30%;
 }
 
 #hero .cell {
@@ -139,7 +163,7 @@ footer .fab {
 
 /* -- Buttons - */
 
-.button {
+#btn-home-zc {
     padding: 1rem 3rem;
     position: relative;
     bottom: 100px;
@@ -149,7 +173,7 @@ footer .fab {
     color: #363636;
 }
 
-.button:hover {
+#btn-home-zc:hover {
     background-color: #CBA91D;
     color: #FFF;
 }
@@ -158,11 +182,11 @@ footer .fab {
     text-transform: lowercase;
 }
 
-/* @media only screen and (min-width: 40em) {
+@media only screen and (min-width: 40em) {
     .top-bar {
-        background: url(../img/BackgroundImage.jpg) no-repeat center/cover;
+        background-color: transparent;
     }
-} */
+}
 
 .orbit {
     margin-top: -25px;
@@ -171,6 +195,63 @@ footer .fab {
 .crt-widget.crt-widget-branded {
     padding-top: 75px;
     padding-bottom: 75px;
+}
+
+#hero .grid-x .cell:nth-child(3) {
+    background: url(../img/bg-scissors.jpg) no-repeat center/cover;
+}
+
+/* Stylists */
+
+#stylists-nav-zc {
+    padding: 70px 0;
+}
+
+#stylists-nav-zc img {
+    height: 90px;
+    width: 90px;
+}
+
+#stylists-nav-zc p {
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: lowercase;
+    padding-top: 15px;
+}
+
+.bg-blue {
+    background: url(../img/bg-geode.jpg) no-repeat center top/cover;
+}
+
+.profile {
+    padding: 20px 0;
+    margin: 0 0 100px;
+}
+
+.profile div div div.text-center{
+    padding: 35px;
+    font-size: 14px;
+}
+
+#kat-port {
+    height: 100%;
+    position: relative;
+}
+
+#kat-port {
+    background: url("../img/kat.jpg") no-repeat center/cover;
+    border: 10px solid #FFF;
+    top: 50px;
+    right: 10%;
+    z-index: 1;
+}
+
+#bg-kat-az {
+    background: url("../img/bg-stylist-1.jpg") no-repeat center/cover;
+    height: 375px;
+    width: 375px;
+    position: absolute;
+    top: 385px;
+    left: 20%;
 }
 
 /*--------------------------------------------------------------
