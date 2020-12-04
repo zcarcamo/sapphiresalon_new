@@ -122,6 +122,12 @@ nav a:hover {
     background-color: #007AB0;
 }
 
+@media only screen and (min-width: 40em) {
+    .top-bar {
+        background-color: transparent;
+    }
+}
+
 .top-bar ul, .drilldown a  {
     background-color: transparent;
 }
@@ -191,12 +197,6 @@ nav a:hover {
     text-transform: lowercase;
 }
 
-@media only screen and (min-width: 40em) {
-    .top-bar {
-        background-color: transparent;
-    }
-}
-
 .orbit-container {
     margin: 1rem;
 }
@@ -238,9 +238,9 @@ nav a:hover {
     background: url(../img/bg-geode.jpg) no-repeat center top/cover;
 }
 
-.profile {
+.profile, #chair {
     padding: 20px 0;
-    margin: 0 0 100px;
+    margin: 0 0 110px;
 }
 
 .profile div div div.text-center{
@@ -248,27 +248,44 @@ nav a:hover {
     font-size: 14px;
 }
 
-#kat-port {
-    height: 100%;
-    position: relative;
-}
-
-#kat-port {
-    background: url("../img/kat.jpg") no-repeat center/cover;
+.port {
     border: 10px solid #FFF;
-    top: 50px;
-    right: 10%;
-    z-index: 1;
+    height: 100%;
 }
 
-#bg-kat-az {
-    background: url("../img/bg-stylist-1.jpg") no-repeat center/cover;
-    height: 375px;
-    width: 375px;
-    position: absolute;
-    top: 385px;
-    left: 20%;
+@media only screen and (min-width: 40em) {
+   .port {
+        position: relative;
+        top: 70px;
+        right: 15%;
+    }
+
+    .profile div[id^="bg-"] {
+        position: relative;
+        bottom: 30px;
+    }
+
+    #bg-kat-az {
+        background: url("../img/bg-stylist-1.jpg") no-repeat center/cover;
+    }
+
+    #bg-brie-az {
+        background: url("../img/bg-stylist-2.jpg") no-repeat center/cover;
+    }
+
+    #bg-kelly-az {
+        background: url("../img/bg-stylist-3.jpg") no-repeat center/cover;
+    }
+
+    #bg-autumn-az {
+        background: url("../img/bg-stylist-4.jpg") no-repeat center/cover;
+    }
+
+    #bg-leah-az {
+        background: url("../img/bg-stylist-5.jpg") no-repeat center/cover;
+    }
 }
+
 
 /* Footer */
 
