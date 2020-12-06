@@ -211,9 +211,8 @@ nav a:hover {
 }
 
 #about-img-af div{
-    background-image: url("https://via.placeholder.com/240");
-    background-repeat: no-repeat;
-    height: 240px;
+    background: url(https://via.placeholder.com/240) no-repeat center/cover;
+    height: 100%;
 }
 
 
@@ -235,7 +234,7 @@ nav a:hover {
 }
 
 .bg-blue {
-    background: url(../img/bg-geode.jpg) no-repeat center top/cover;
+    background: url('../img/bg-geode.jpg') no-repeat center top/cover;
 }
 
 .profile, #chair {
@@ -243,7 +242,7 @@ nav a:hover {
     margin: 0 0 110px;
 }
 
-.profile div div div.text-center{
+.profile div div div.text-center, #chair div div{
     padding: 35px;
     font-size: 14px;
 }
@@ -310,6 +309,104 @@ address p {
     margin-bottom: 8px;
 }
 
+/* Animation */
+
+.animate-az {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: .75s;
+    animation-duration: .75s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.pop-up {
+    -webkit-cursor: zoom-in;
+    -moz-cursor: zoom-in;
+    cursor: zoom-in;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+.animate-delay-1-az {
+    -webkit-animation-delay: .10s;
+    -moz-animation-delay: .10s;
+    -o-animation-delay: .10s;
+    animation-delay: .10s;
+}
+
+.animate-delay-2-az {
+    -webkit-animation-delay: .15s;
+    -moz-animation-delay: .15s;
+    -o-animation-delay: .15s;
+    animation-delay: .15s;
+}
+
+.animate-delay-3-az {
+    -webkit-animation-delay: .20s;
+    -moz-animation-delay: .20s;
+    -o-animation-delay: .20s;
+    animation-delay: .20s;
+}
+
+.animate-delay-4-az {
+    -webkit-animation-delay: .25s;
+    -moz-animation-delay: .25s;
+    -o-animation-delay: .25s;
+    animation-delay: .25s;
+}
+
+.animate-delay-5-az {
+    -webkit-animation-delay: .30s;
+    -moz-animation-delay: .30s;
+    -o-animation-delay: .30s;
+    animation-delay: .30s;
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+      opacity: 0;
+      visibility: hidden;
+      /*-webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);*/
+      -webkit-transform: translate3d(0, 40px, 0);
+      transform: translate3d(0, 40px, 0);
+    }
+  
+    to {
+      opacity: 1;
+      visibility: visible;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      visibility: hidden;
+      /*-webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);*/
+      -webkit-transform: translate3d(0, 40px, 0);
+      transform: translate3d(0, 40px, 0);
+    }
+  
+    to {
+      visibility: visible;
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  .fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+  }
+  
 /*--------------------------------------------------------------
 7.0 - UTILITIES
 -------------------------------------------------------------- */
