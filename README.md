@@ -1,3 +1,5 @@
+# Sapphire Salon
+
 ## About
 
 Sapphire Salon is a boutique salon located in Southeast Lincoln. Sapphire stylists’ skill sets vary from fashion colors to men’s styles. With an emphasis on continuing education, Sapphire Salon has their finger on the pulse in terms of innovation in the hair industry.
