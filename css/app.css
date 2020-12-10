@@ -67,6 +67,10 @@ body {
 4.0 - ELEMENTS
 -------------------------------------------------------------- */
 
+h1 {
+    font-size: 2rem;
+}
+
 h2{
     font-family: 'Fira Sans', sans-serif;
 }
@@ -107,6 +111,14 @@ footer nav a, footer p {
 
 img.logo-az {
     max-width: 90px;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    opacity: 0;
+    visibility: hidden;
 }
 
 nav a {
@@ -120,6 +132,7 @@ a:hover {
 
 #bg-topnav-az {
     background: url(../img/bg-geode-topnav.jpg) no-repeat center/cover;
+    margin: 0 0 3.5rem;
 }
 
 .title-bar {
@@ -222,9 +235,11 @@ a:hover {
 
 .orbit {
     margin-top: -25px;
+    padding: 0 1.5rem;
 }
 
 .orbit-previous, .orbit-next {
+    font-size: 2.5rem;
     top: 40%;
     color: #007AB0;
 }
@@ -244,6 +259,19 @@ blockquote {
 
 /* About */
 
+#about {
+    margin: 2rem 0;
+}
+
+#about>div:last-child {
+    margin: 2rem 0 0;
+}
+
+#social {
+    margin: 3.5rem 0;
+    font-size: 1.5rem;
+}
+
 #about-img-af div{
     background: url(https://via.placeholder.com/240) no-repeat center/cover;
     height: 100%;
@@ -253,7 +281,7 @@ blockquote {
 /* Stylists */
 
 #stylists-nav-zc {
-    padding: 70px 0;
+    margin: 3.5rem 0;
 }
 
 #stylists-nav-zc img {
@@ -367,12 +395,6 @@ address p {
     visibility: hidden;
 }
 
-.pop-up-az {
-    -webkit-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    transition: .3s all ease;
-}
-
 .animate-delay-1-az {
     -webkit-animation-delay: .10s;
     -moz-animation-delay: .10s;
@@ -444,9 +466,28 @@ address p {
     }
   }
   
-  .fadeInUp {
-    -webkit-animation-name: fadeInUp;
-    animation-name: fadeInUp;
+  @-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        visibility: visible;
+        opacity: 1;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        visibility: visible;
+        opacity: 1;
+    }
   }
   
 /*--------------------------------------------------------------
