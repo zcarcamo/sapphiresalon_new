@@ -382,6 +382,12 @@ address p {
     margin-bottom: 8px;
 }
 
+#copyright {
+    margin-top: 2rem;
+    font-size: .75rem;
+    font-style: italic;
+}
+
 /* Animation */
 
 .animate-az {
