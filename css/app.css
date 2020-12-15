@@ -167,7 +167,6 @@ a:hover {
     box-shadow: 0 7px 0 #007AB0, 0 14px 0 #007AB0;
 }
 
-
 /* Home Hero */
 
 #hero-az {
@@ -300,7 +299,7 @@ blockquote {
     margin: 0 0 1em;
 }
 
-.profile-az:focus, #contact:focus {
+.profile-az:focus, #contact:focus, #chair:focus {
     outline: 0;
 }
 
@@ -361,15 +360,11 @@ blockquote {
     padding: 0.5rem 0.75rem;
 }
 
-footer .fab {
-    color: #FFF;
-}
-
 footer .fab:hover {
     color: #CBA91D;
 }
 
-address h2, address a {
+footer .fab, address h2, address a, a:focus {
     color: #FFF;
 }
 
