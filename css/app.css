@@ -243,6 +243,10 @@ a:hover {
     color: #007AB0;
 }
 
+#social:focus {
+    color: #007AB0;
+}
+
 blockquote {
     border-left: 0;
 }
