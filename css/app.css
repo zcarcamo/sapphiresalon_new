@@ -243,7 +243,7 @@ a:hover {
     color: #007AB0;
 }
 
-#social:focus {
+#social a:focus {
     color: #007AB0;
 }
 
